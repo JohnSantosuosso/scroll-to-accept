@@ -18,7 +18,6 @@ function obCallback(payload) {
   //if we call payload[0].isIntersecting we'll see a boolean of true/false if payload is on page
   //we can also call payload[0].intersectionRatio to see if we're at bottom
 }
-
 //Sample watching event
 // const ob = new IntersectionObserver(obCallback);
 //won't do anything yet because IntersectionObserver is just a watcher
@@ -35,12 +34,6 @@ const ob = new IntersectionObserver(obCallback, {
 });
 
 ob.observe(terms.lastElementChild); //we want to see when last paragraph is observed
-
-
-
-
-
-
 
 
 terms.addEventListener('scroll', function(e) {
